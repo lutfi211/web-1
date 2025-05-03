@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman Interaktif Modern</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 5px solid #00bcd4;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    section {
+      margin-bottom: 100px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      padding: 20px 0;
+      background-color: #f0f0f0;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 5px;
+      }
+
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Muhammad Lutfi S.A.F | 240103141</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#format">Format Image</a>
+      <a href="#detail">Detail</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="container" id="home">
+      <h2>Halaman Home</h2>
+      <p>Selamat datang! Ini adalah halaman utama dengan tampilan modern dan interaktif.</p>
+    </section>
+
+    <!-- FORMAT IMAGE -->
+    <section class="container" id="format">
+      <h2>Format Gambar Interaktif</h2>
+      <p>Klik pada gambar di bawah untuk diarahkan ke halaman detail.</p>
+
+      <img src="c:\Users\lenovo\Downloads\Picture 1.jpg" 
+           alt="Gambar Laptop" 
+           onclick="location.href='#detail';" />
+
+    </section>
+
+    <!-- DETAIL -->
+    <section class="container" id="detail">
+      <h2>Halaman Detail Gambar</h2>
+      <p>Gambar ini menunjukkan sebuah meja kerja dengan laptop di tengah, kacamata di atas laptop, kaca pembesar di sebelah kiri, dan tempat alat tulis berisi pensil dan pulpen di sisi kiri laptop. Suasananya rapi dan simpel..</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 - Muhammad Lutfi S.A.F
+  </footer>
+
+</body>
+</html>
